@@ -1,0 +1,7 @@
+pages\LoginPage.class
+pages\SignupLoginPage.class
+pages\HomePage.class
+framework\SeleniumFrameWork.class
+tests\SignupTest.class
+tests\BaseTest.class
+pages\SignupPage.class
