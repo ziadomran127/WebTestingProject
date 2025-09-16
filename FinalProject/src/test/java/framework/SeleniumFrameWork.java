@@ -17,6 +17,11 @@ public class SeleniumFrameWork {
     private WebDriverWait explicitWait;
     private final int DEFAULT_TIMEOUT = 10;
 
+      // ✅ لازم تضيف الكونستركتور ده
+    public SeleniumFrameWork(WebDriver driver) {
+        this.driver = driver;
+    }
+     
     // Initialize the browser
     public void Edges_initializeBrowser() {
         driver = new ChromeDriver();

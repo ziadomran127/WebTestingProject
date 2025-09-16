@@ -11,7 +11,7 @@ public class BaseTest {
 
     @BeforeSuite
     public void globalSetUp() {
-        edges = new SeleniumFrameWork();
+        edges = new SeleniumFrameWork(driver);
         edges.Edges_initializeBrowser();
         edges.Edges_navigateToURL("https://automationexercise.com");
         driver = edges.getDriver();

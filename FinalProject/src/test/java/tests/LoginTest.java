@@ -35,7 +35,15 @@ public class LoginTest {
         loginPage.enterLoginDetails(SignupTest.createdEmail, SignupTest.createdPassword);
         loginPage.clickLoginButton();
 
-        // ممكن تضيف تحقق إنك Logged in فعلاً لو تحب
+        // Assuming you already logged in successfully
+Assert.assertTrue(loginPage.isLoggedInAsVisible(), "'Logged in as username' is NOT visible!");
+
+// Delete the account
+loginPage.clickDeleteAccountButton();
+
+// Verify deletion and click continue
+Assert.assertTrue(loginPage.isAccountDeletedVisible(), "'ACCOUNT DELETED!' is NOT visible!");
+loginPage.clickContinueAfterDelete();
     }
 
     @AfterClass
