@@ -39,7 +39,7 @@ public class LoginTest {
 Assert.assertTrue(loginPage.isLoggedInAsVisible(), "'Logged in as username' is NOT visible!");
 
 // Delete the account
-loginPage.clickDeleteAccountButton();
+//loginPage.clickDeleteAccountButton();
 
 // Verify deletion and click continue
 Assert.assertTrue(loginPage.isAccountDeletedVisible(), "'ACCOUNT DELETED!' is NOT visible!");

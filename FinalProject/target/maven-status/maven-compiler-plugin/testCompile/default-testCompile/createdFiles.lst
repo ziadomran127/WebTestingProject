@@ -1,3 +1,4 @@
+tests\LogoutTest.class
 pages\LoginPage.class
 pages\HomePage.class
 framework\SeleniumFrameWork.class

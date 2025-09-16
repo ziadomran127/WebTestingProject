@@ -2,8 +2,8 @@
 <suite name="AutomationExercise Suite">
     <test name="Register User Tests">
         <classes>
-           
-         <class name="tests.InvalidLoginTest"/>
+           <class name="tests.SignupTest"/>
+         <class name="tests.LogoutTest"/>
         </classes>
     </test>
 </suite>
