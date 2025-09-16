@@ -1,6 +1,7 @@
 pages\LoginPage.class
 pages\HomePage.class
 framework\SeleniumFrameWork.class
+tests\InvalidLoginTest.class
 tests\SignupTest.class
 tests\BaseTest.class
 tests\LoginTest.class

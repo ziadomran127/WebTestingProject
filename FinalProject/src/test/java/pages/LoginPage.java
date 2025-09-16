@@ -22,6 +22,8 @@ public class LoginPage {
      private By deleteAccountButton = By.xpath("//a[text()=' Delete Account']");
     private By accountDeletedMessage = By.xpath("//b[text()='Account Deleted!']");
     private By continueAfterDeleteButton = By.xpath("//a[text()='Continue']");
+    private By loginErrorMessage = By.xpath("//p[contains(text(),'Your email or password is incorrect!')]");
+    
     public LoginPage(WebDriver driver) {
         this.driver = driver;
          this.sf = new SeleniumFrameWork(driver);
@@ -71,6 +73,10 @@ public class LoginPage {
     public void clickContinueAfterDelete() {
         driver.findElement(continueAfterDeleteButton).click();
     }
+    
+    public boolean isLoginErrorVisible() {
+    return driver.findElement(loginErrorMessage).isDisplayed();
+}
     
     
 }

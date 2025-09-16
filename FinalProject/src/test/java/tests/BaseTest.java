@@ -18,11 +18,15 @@ public class BaseTest {
         System.out.println("✅ Browser launched and navigated to homepage.");
     }
 
+    public WebDriver getDriver() {
+        return driver;
+    }
+
     @AfterSuite
     public void globalTearDown() {
-      //  if (edges != null) {
-         //   edges.Edges_closeBrowser();
-           // System.out.println("✅ Browser closed after all tests.");
+        if (edges != null) {
+            // edges.Edges_closeBrowser();
+            System.out.println("✅ Browser closed after all tests.");
         }
     }
-//}
+}

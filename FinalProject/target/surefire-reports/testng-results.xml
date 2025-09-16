@@ -1,39 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-09-16T20:01:03 EEST" name="AutomationExercise Suite" finished-at="2025-09-16T20:01:35 EEST" duration-ms="32437">
+  <suite started-at="2025-09-16T20:13:27 EEST" name="AutomationExercise Suite" finished-at="2025-09-16T20:13:33 EEST" duration-ms="6128">
     <groups>
     </groups>
-    <test started-at="2025-09-16T20:01:03 EEST" name="Register User Tests" finished-at="2025-09-16T20:01:35 EEST" duration-ms="32437">
-      <class name="tests.LoginTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.LoginTest@441772e]" started-at="2025-09-16T20:01:20 EEST" name="setUp" finished-at="2025-09-16T20:01:20 EEST" duration-ms="757" status="PASS">
+    <test started-at="2025-09-16T20:13:27 EEST" name="Register User Tests" finished-at="2025-09-16T20:13:33 EEST" duration-ms="6128">
+      <class name="tests.InvalidLoginTest">
+        <test-method is-config="true" signature="globalSetUp()[pri:0, instance:tests.InvalidLoginTest@123ef382]" started-at="2025-09-16T20:13:23 EEST" name="globalSetUp" finished-at="2025-09-16T20:13:27 EEST" duration-ms="3736" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="testLoginFlow()[pri:0, instance:tests.LoginTest@441772e]" started-at="2025-09-16T20:01:20 EEST" name="testLoginFlow" finished-at="2025-09-16T20:01:34 EEST" duration-ms="13944" status="PASS">
+        </test-method> <!-- globalSetUp -->
+        <test-method signature="testInvalidLogin()[pri:0, instance:tests.InvalidLoginTest@123ef382]" started-at="2025-09-16T20:13:27 EEST" name="testInvalidLogin" finished-at="2025-09-16T20:13:33 EEST" duration-ms="6113" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testLoginFlow -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LoginTest@441772e]" started-at="2025-09-16T20:01:34 EEST" name="tearDown" finished-at="2025-09-16T20:01:35 EEST" duration-ms="700" status="PASS">
+        </test-method> <!-- testInvalidLogin -->
+        <test-method is-config="true" signature="globalTearDown()[pri:0, instance:tests.InvalidLoginTest@123ef382]" started-at="2025-09-16T20:13:33 EEST" name="globalTearDown" finished-at="2025-09-16T20:13:33 EEST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- tests.LoginTest -->
-      <class name="tests.SignupTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:tests.SignupTest@59fd97a8]" started-at="2025-09-16T20:01:03 EEST" name="setup" finished-at="2025-09-16T20:01:12 EEST" duration-ms="9285" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="testUserSignup()[pri:0, instance:tests.SignupTest@59fd97a8]" started-at="2025-09-16T20:01:12 EEST" name="testUserSignup" finished-at="2025-09-16T20:01:19 EEST" duration-ms="7015" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testUserSignup -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:tests.SignupTest@59fd97a8]" started-at="2025-09-16T20:01:19 EEST" name="teardown" finished-at="2025-09-16T20:01:20 EEST" duration-ms="708" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-      </class> <!-- tests.SignupTest -->
+        </test-method> <!-- globalTearDown -->
+      </class> <!-- tests.InvalidLoginTest -->
     </test> <!-- Register User Tests -->
   </suite> <!-- AutomationExercise Suite -->
 </testng-results>
