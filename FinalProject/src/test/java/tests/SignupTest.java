@@ -17,6 +17,10 @@ public class SignupTest {
     private SignupPage signupPage;
     private String email;
 
+    // ✅ متغيرات static علشان LoginTest يقدر يستخدمهم
+    public static String createdEmail;
+    public static String createdPassword = "Test@123";
+
     @BeforeClass
     public void setup() {
         // Launch browser
@@ -33,6 +37,7 @@ public class SignupTest {
         
         // Generate unique email
         email = "johndoe" + System.currentTimeMillis() + "@test.com";
+        createdEmail = email; // ← نخزن الإيميل في المتغير static
     }
 
     @Test

@@ -3,13 +3,13 @@
 <suite name="Failed suite [AutomationExercise Suite]" guice-stage="DEVELOPMENT" verbose="0">
   <test thread-count="5" name="Register User Tests(failed)" verbose="0">
     <classes>
-      <class name="tests.SignupTest">
+      <class name="tests.LoginTest">
         <methods>
-          <include name="testUserSignup"/>
-          <include name="teardown"/>
-          <include name="setup"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="testLoginFlow"/>
         </methods>
-      </class> <!-- tests.SignupTest -->
+      </class> <!-- tests.LoginTest -->
     </classes>
   </test> <!-- Register User Tests(failed) -->
 </suite> <!-- Failed suite [AutomationExercise Suite] -->
