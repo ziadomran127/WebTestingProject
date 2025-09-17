@@ -6,12 +6,14 @@ import org.openqa.selenium.WebDriver;
 public class HomePage {
 
     private WebDriver driver;
-     private By homeSlider = By.id("slider-carousel");        // عنصر ظاهر في الصفحة الرئيسية
-    private By testCasesButton = By.xpath("//a[@href='/test_cases']");
+     private By homeSlider = By.id("slider-carousel");        
+   
 
     // 🔹 Locators
     private By logo = By.xpath("/html/body/header/div/div/div/div[1]/div/a/img");
     private By signupLoginLink = By.xpath("/html/body/header/div/div/div/div[2]/div/ul/li[4]/a");
+    private By productsButton = By.xpath("//a[@href='/products']");
+     private By testCasesButton = By.xpath("//a[@href='/test_cases']");
 
     // 🏗️ Constructor
     public HomePage(WebDriver driver) {
@@ -45,5 +47,9 @@ public class HomePage {
     
       public void clickTestCasesButton() {
         driver.findElement(testCasesButton).click();
+    }
+      
+        public void clickProductsButton() {
+        driver.findElement(productsButton).click();
     }
 }

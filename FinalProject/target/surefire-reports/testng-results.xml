@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-09-17T12:30:18 EEST" name="AutomationExercise Suite" finished-at="2025-09-17T12:30:20 EEST" duration-ms="1676">
+  <suite started-at="2025-09-17T12:46:58 EEST" name="AutomationExercise Suite" finished-at="2025-09-17T12:47:00 EEST" duration-ms="2898">
     <groups>
     </groups>
-    <test started-at="2025-09-17T12:30:18 EEST" name="Register User Tests" finished-at="2025-09-17T12:30:20 EEST" duration-ms="1676">
-      <class name="tests.VerifyTestCasesPageTest">
-        <test-method is-config="true" signature="globalSetUp()[pri:0, instance:tests.VerifyTestCasesPageTest@123ef382]" started-at="2025-09-17T12:30:12 EEST" name="globalSetUp" finished-at="2025-09-17T12:30:18 EEST" duration-ms="6435" status="PASS">
+    <test started-at="2025-09-17T12:46:58 EEST" name="Register User Tests" finished-at="2025-09-17T12:47:00 EEST" duration-ms="2898">
+      <class name="tests.VerifyAllProductsTest">
+        <test-method is-config="true" signature="globalSetUp()[pri:0, instance:tests.VerifyAllProductsTest@123ef382]" started-at="2025-09-17T12:46:49 EEST" name="globalSetUp" finished-at="2025-09-17T12:46:58 EEST" duration-ms="8692" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- globalSetUp -->
-        <test-method signature="testVerifyTestCasesPage()[pri:0, instance:tests.VerifyTestCasesPageTest@123ef382]" started-at="2025-09-17T12:30:18 EEST" name="testVerifyTestCasesPage" finished-at="2025-09-17T12:30:20 EEST" duration-ms="1658" status="PASS">
+        <test-method signature="testVerifyAllProductsPage()[pri:0, instance:tests.VerifyAllProductsTest@123ef382]" started-at="2025-09-17T12:46:58 EEST" name="testVerifyAllProductsPage" finished-at="2025-09-17T12:47:00 EEST" duration-ms="2880" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testVerifyTestCasesPage -->
-        <test-method is-config="true" signature="globalTearDown()[pri:0, instance:tests.VerifyTestCasesPageTest@123ef382]" started-at="2025-09-17T12:30:20 EEST" name="globalTearDown" finished-at="2025-09-17T12:30:20 EEST" duration-ms="0" status="PASS">
+        </test-method> <!-- testVerifyAllProductsPage -->
+        <test-method is-config="true" signature="globalTearDown()[pri:0, instance:tests.VerifyAllProductsTest@123ef382]" started-at="2025-09-17T12:47:00 EEST" name="globalTearDown" finished-at="2025-09-17T12:47:00 EEST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- globalTearDown -->
-      </class> <!-- tests.VerifyTestCasesPageTest -->
+      </class> <!-- tests.VerifyAllProductsTest -->
     </test> <!-- Register User Tests -->
   </suite> <!-- AutomationExercise Suite -->
 </testng-results>

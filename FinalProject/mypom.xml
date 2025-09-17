@@ -3,7 +3,7 @@
     <test name="Register User Tests">
         <classes>
            
-         <class name="tests.VerifyTestCasesPageTest"/>
+         <class name="tests.VerifyAllProductsTest"/>
         </classes>
     </test>
 </suite>

@@ -1,3 +1,4 @@
+pages\ProductsPage.class
 tests\RegisterExistingUserTest.class
 tests\VerifyTestCasesPageTest.class
 pages\LoginPage.class
@@ -6,9 +7,11 @@ tests\BaseTest.class
 tests\LoginTest.class
 pages\ContactUsPage.class
 pages\SignupPage.class
+tests\VerifyAllProductsTest.class
 tests\LogoutTest.class
 pages\TestCasesPage.class
 framework\SeleniumFrameWork.class
 tests\InvalidLoginTest.class
 tests\SignupTest.class
 tests\ContactUsTest.class
+pages\ProductDetailPage.class
