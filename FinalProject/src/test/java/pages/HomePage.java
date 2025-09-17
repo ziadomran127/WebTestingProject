@@ -36,4 +36,8 @@ public class HomePage {
     public void clickSignupLogin() {
         driver.findElement(signupLoginLink).click();
     }
+    
+    public void clickContactUs() {
+    driver.findElement(By.xpath("//a[text()=' Contact us']")).click();
+}
 }

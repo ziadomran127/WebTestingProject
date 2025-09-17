@@ -6,5 +6,7 @@ framework\SeleniumFrameWork.class
 tests\InvalidLoginTest.class
 tests\SignupTest.class
 tests\BaseTest.class
+tests\ContactUsTest.class
 tests\LoginTest.class
+pages\ContactUsPage.class
 pages\SignupPage.class
