@@ -78,5 +78,9 @@ public class LoginPage {
     return driver.findElement(loginErrorMessage).isDisplayed();
 }
     
+    public boolean isEmailAlreadyExistsErrorVisible() {
+    return driver.findElement(By.xpath("//p[text()='Email Address already exist!']")).isDisplayed();
+}
+    
     
 }
