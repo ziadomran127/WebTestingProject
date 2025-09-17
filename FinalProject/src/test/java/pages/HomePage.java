@@ -6,6 +6,8 @@ import org.openqa.selenium.WebDriver;
 public class HomePage {
 
     private WebDriver driver;
+     private By homeSlider = By.id("slider-carousel");        // عنصر ظاهر في الصفحة الرئيسية
+    private By testCasesButton = By.xpath("//a[@href='/test_cases']");
 
     // 🔹 Locators
     private By logo = By.xpath("/html/body/header/div/div/div/div[1]/div/a/img");
@@ -40,4 +42,8 @@ public class HomePage {
     public void clickContactUs() {
     driver.findElement(By.xpath("//a[text()=' Contact us']")).click();
 }
+    
+      public void clickTestCasesButton() {
+        driver.findElement(testCasesButton).click();
+    }
 }
