@@ -14,4 +14,5 @@ framework\SeleniumFrameWork.class
 tests\InvalidLoginTest.class
 tests\SignupTest.class
 tests\ContactUsTest.class
+tests\SearchProductTest.class
 pages\ProductDetailPage.class
