@@ -1,5 +1,6 @@
 pages\ProductsPage.class
 tests\RegisterExistingUserTest.class
+tests\VerifySubscriptionTest.class
 tests\VerifyTestCasesPageTest.class
 pages\LoginPage.class
 pages\HomePage.class

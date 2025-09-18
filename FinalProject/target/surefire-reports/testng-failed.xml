@@ -3,13 +3,13 @@
 <suite name="Failed suite [AutomationExercise Suite]" guice-stage="DEVELOPMENT" verbose="0">
   <test thread-count="5" name="Register User Tests(failed)" verbose="0">
     <classes>
-      <class name="tests.SearchProductTest">
+      <class name="tests.VerifySubscriptionTest">
         <methods>
-          <include name="setUp"/>
-          <include name="testSearchProduct"/>
           <include name="tearDown"/>
+          <include name="testVerifySubscriptionInHomePage"/>
+          <include name="setUp"/>
         </methods>
-      </class> <!-- tests.SearchProductTest -->
+      </class> <!-- tests.VerifySubscriptionTest -->
     </classes>
   </test> <!-- Register User Tests(failed) -->
 </suite> <!-- Failed suite [AutomationExercise Suite] -->
