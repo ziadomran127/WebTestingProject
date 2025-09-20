@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="12.537" tests="1" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="36.458" tests="1" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="17"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -15,7 +15,7 @@
     <property name="user.country" value="US"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-17\bin"/>
-    <property name="sun.java.command" value="C:\Users\LEGION\AppData\Local\Temp\surefire5260259940393411307\surefirebooter-20250920202922254_3.jar C:\Users\LEGION\AppData\Local\Temp\surefire5260259940393411307 2025-09-20T20-29-22_091-jvmRun1 surefire-20250920202922254_1tmp surefire_0-20250920202922254_2tmp"/>
+    <property name="sun.java.command" value="C:\Users\LEGION\AppData\Local\Temp\surefire15014680451766445877\surefirebooter-20250920220226178_3.jar C:\Users\LEGION\AppData\Local\Temp\surefire15014680451766445877 2025-09-20T22-02-26_025-jvmRun1 surefire-20250920220226178_1tmp surefire_0-20250920220226178_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="D:\summer 2025\Software testing diploma\final project\final project\FinalProject\target\test-classes;D:\summer 2025\Software testing diploma\final project\final project\FinalProject\target\classes;C:\Users\LEGION\.m2\repository\org\testng\testng\7.11.0\testng-7.11.0.jar;C:\Users\LEGION\.m2\repository\org\slf4j\slf4j-api\2.0.16\slf4j-api-2.0.16.jar;C:\Users\LEGION\.m2\repository\org\jcommander\jcommander\1.83\jcommander-1.83.jar;C:\Users\LEGION\.m2\repository\org\webjars\jquery\3.7.1\jquery-3.7.1.jar;C:\Users\LEGION\.m2\repository\org\seleniumhq\selenium\selenium-java\4.34.0\selenium-java-4.34.0.jar;C:\Users\LEGION\.m2\repository\org\seleniumhq\selenium\selenium-api\4.34.0\selenium-api-4.34.0.jar;C:\Users\LEGION\.m2\repository\org\jspecify\jspecify\1.0.0\jspecify-1.0.0.jar;C:\Users\LEGION\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.34.0\selenium-chrome-driver-4.34.0.jar;C:\Users\LEGION\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\Users\LEGION\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.34.0\selenium-chromium-driver-4.34.0.jar;C:\Users\LEGION\.m2\repository\org\seleniumhq\selenium\selenium-json\4.34.0\selenium-json-4.34.0.jar;C:\Users\LEGION\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.34.0\selenium-manager-4.34.0.jar;C:\Users\LEGION\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v136\4.34.0\selenium-devtools-v136-4.34.0.jar;C:\Users\LEGION\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v137\4.34.0\selenium-devtools-v137-4.34.0.jar;C:\Users\LEGION\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v138\4.34.0\selenium-devtools-v138-4.34.0.jar;C:\Users\LEGION\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.34.0\selenium-edge-driver-4.34.0.jar;C:\Users\LEGION\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.34.0\selenium-firefox-driver-4.34.0.jar;C:\Users\LEGION\.m2\repository\org\seleniumhq\selenium\selenium-http\4.34.0\selenium-http-4.34.0.jar;C:\Users\LEGION\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.34.0\selenium-ie-driver-4.34.0.jar;C:\Users\LEGION\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.34.0\selenium-remote-driver-4.34.0.jar;C:\Users\LEGION\.m2\repository\com\google\guava\guava\33.4.8-jre\guava-33.4.8-jre.jar;C:\Users\LEGION\.m2\repository\com\google\guava\failureaccess\1.0.3\failureaccess-1.0.3.jar;C:\Users\LEGION\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\LEGION\.m2\repository\com\google\errorprone\error_prone_annotations\2.36.0\error_prone_annotations-2.36.0.jar;C:\Users\LEGION\.m2\repository\com\google\j2objc\j2objc-annotations\3.0.0\j2objc-annotations-3.0.0.jar;C:\Users\LEGION\.m2\repository\io\opentelemetry\opentelemetry-api\1.51.0\opentelemetry-api-1.51.0.jar;C:\Users\LEGION\.m2\repository\io\opentelemetry\opentelemetry-context\1.51.0\opentelemetry-context-1.51.0.jar;C:\Users\LEGION\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.51.0\opentelemetry-exporter-logging-1.51.0.jar;C:\Users\LEGION\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.51.0\opentelemetry-sdk-common-1.51.0.jar;C:\Users\LEGION\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.51.0\opentelemetry-sdk-extension-autoconfigure-spi-1.51.0.jar;C:\Users\LEGION\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.51.0\opentelemetry-sdk-extension-autoconfigure-1.51.0.jar;C:\Users\LEGION\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.51.0\opentelemetry-sdk-trace-1.51.0.jar;C:\Users\LEGION\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.51.0\opentelemetry-sdk-1.51.0.jar;C:\Users\LEGION\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.51.0\opentelemetry-sdk-metrics-1.51.0.jar;C:\Users\LEGION\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.51.0\opentelemetry-sdk-logs-1.51.0.jar;C:\Users\LEGION\.m2\repository\net\bytebuddy\byte-buddy\1.17.6\byte-buddy-1.17.6.jar;C:\Users\LEGION\.m2\repository\org\seleniumhq\selenium\selenium-os\4.34.0\selenium-os-4.34.0.jar;C:\Users\LEGION\.m2\repository\org\apache\commons\commons-exec\1.5.0\commons-exec-1.5.0.jar;C:\Users\LEGION\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.34.0\selenium-safari-driver-4.34.0.jar;C:\Users\LEGION\.m2\repository\org\seleniumhq\selenium\selenium-support\4.34.0\selenium-support-4.34.0.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -30,7 +30,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\LEGION\AppData\Local\Temp\surefire5260259940393411307\surefirebooter-20250920202922254_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\LEGION\AppData\Local\Temp\surefire15014680451766445877\surefirebooter-20250920220226178_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="17.0.12+8-LTS-286"/>
@@ -57,21 +57,36 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="61.0"/>
   </properties>
-  <testcase name="testProductQuantityInCart" classname="tests.VerifyProductQuantityInCartTest" time="3.358">
-    <system-out><![CDATA[🚀 Starting Test Case 13: Verify Product Quantity in Cart
-Edges: Explicit wait for presence of By.xpath: /html/body/section[2]/div/div/div[2]/div/div[2]/div/div[2]/ul/li/a
-✅ Clicked on first product 'View Product' button using JS.
-✅ Product detail page visible: true
-✅ Set product quantity to 4
-✅ Clicked 'Add to cart' from product detail page
+  <testcase name="testPlaceOrderRegisterWhileCheckout" classname="tests.PlaceOrderRegisterWhileCheckoutTest" time="27.516">
+    <system-out><![CDATA[Edges: Browser Initialized.
+Edges: Navigated to URL: https://automationexercise.com
+✅ Browser launched and navigated to homepage.
+✅ First product added to cart.
+✅ Modal disappeared.
+✅ Clicked 'Continue Shopping'
+✅ Modal disappeared.
+✅ Second product added to cart.
 🛒 Clicked 'View Cart'
-✅ Product quantity in cart: 4
-✅ Product quantity in cart verified successfully: 4
+🛒 Clicked on Cart button
+➡️ Clicked 'Proceed To Checkout'
+📝 Clicked 'Register / Login'
+🛒 Clicked on Cart button
+➡️ Clicked 'Proceed To Checkout'
+📝 Entered order comment: Please deliver between 9 AM - 5 PM
+✅ Clicked 'Place Order' button
+💳 Payment details entered
+✅ Clicked 'Pay and Confirm Order' safely via JS
+🎉 Order placed successfully: true
+✅ Test completed successfully: Place Order with Register while Checkout
+❌ Clicked 'Delete Account'
+✅ Account deleted message visible: true
+➡️ Clicked 'Continue' after account deletion
+✅ Test completed successfully: Place Order with Register while Checkout + Account Deletion
 ]]></system-out>
     <system-err><![CDATA[SLF4J(W): No SLF4J providers were found.
 SLF4J(W): Defaulting to no-operation (NOP) logger implementation
 SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
-Sep 20, 2025 8:29:23 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Sep 20, 2025 10:02:27 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 140, returning the closest version; found: 138; Please update to a Selenium version that supports CDP version 140
 ]]></system-err>
   </testcase>

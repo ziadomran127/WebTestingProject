@@ -27,23 +27,22 @@ public class ProductsPage {
     private By searchInput = By.id("search_product");
     private By searchButton = By.id("submit_search");
     private By searchedProductsHeader = By.xpath("//h2[text()='Searched Products']");
-// ====== Product Detail Page Verification ======
-private By productDetailInfo = By.cssSelector(".product-information"); // locator for product info section
+
+    // Product Detail Page Verification
+    private By productDetailInfo = By.cssSelector(".product-information");
+
     // Add to cart
     private By firstProductCard = By.xpath("(//div[@class='product-image-wrapper'])[1]");
     private By secondProductCard = By.xpath("(//div[@class='product-image-wrapper'])[2]");
-    private By firstAddToCartButton = By.xpath("(//a[@data-product-id])[1]");
-    private By secondAddToCartButton = By.xpath("(//a[@data-product-id])[2]");
     private By continueShoppingButton = By.xpath("//button[text()='Continue Shopping']");
     private By viewCartButton = By.xpath("//u[text()='View Cart']");
-    // ====== Add to cart from Product Detail Page ======
-private By addToCartButtonDetail = By.xpath("/html/body/section/div/div/div[2]/div[2]/div[2]/div/span/button");
+    private By addToCartButtonDetail = By.xpath("/html/body/section/div/div/div[2]/div[2]/div[2]/div/span/button");
 
     // Modal window (appears after adding to cart)
     private By successModal = By.cssSelector(".modal-content");
-    
-    // ====== Quantity Handling (added) ======
-private By quantityInput = By.id("quantity"); // input field in product detail page
+
+    // Quantity Handling
+    private By quantityInput = By.id("quantity");
 
     public ProductsPage(WebDriver driver) {
         this.driver = driver;
@@ -55,12 +54,12 @@ private By quantityInput = By.id("quantity"); // input field in product detail p
     public boolean isAllProductsPageVisible() {
         return driver.findElement(allProductsHeader).isDisplayed();
     }
-    
+
     public boolean isProductDetailVisible() {
-    boolean visible = driver.findElement(productDetailInfo).isDisplayed();
-    System.out.println("✅ Product detail page visible: " + visible);
-    return visible;
-}
+        boolean visible = driver.findElement(productDetailInfo).isDisplayed();
+        System.out.println("✅ Product detail page visible: " + visible);
+        return visible;
+    }
 
     public boolean isProductsListVisible() {
         return driver.findElements(productsList).size() > 0;
@@ -111,34 +110,40 @@ private By quantityInput = By.id("quantity"); // input field in product detail p
         return true;
     }
 
-   // ====== Add to cart ======
-    private void addProductToCart(WebElement card, WebElement button, String productName) throws InterruptedException {
-        // Scroll to card
+    // ====== Add to cart helpers ======
+    private void waitForModalToDisappear() {
+        try {
+            WebDriverWait modalWait = new WebDriverWait(driver, Duration.ofSeconds(20));
+            modalWait.pollingEvery(Duration.ofMillis(500))
+                     .until(ExpectedConditions.invisibilityOfElementLocated(successModal));
+            System.out.println("✅ Modal disappeared.");
+        } catch (Exception e) {
+            System.out.println("⚠️ Modal did not disappear in time, continuing anyway.");
+        }
+    }
+
+    private void addProductToCart(WebElement card, WebElement button, String productName) {
+        // Scroll and hover
         ((JavascriptExecutor) driver).executeScript(
                 "arguments[0].scrollIntoView({block: 'center'}); window.scrollBy(0, -100);", card);
-
-        // Hover over the product
         new Actions(driver).moveToElement(card).pause(Duration.ofMillis(500)).perform();
 
-        // Click Add to Cart using JS
+        // Click add to cart using JS
         ((JavascriptExecutor) driver).executeScript("arguments[0].click();", button);
 
-        // Wait for success modal
+        // Wait for modal
         wait.until(ExpectedConditions.visibilityOfElementLocated(successModal));
         System.out.println("✅ " + productName + " added to cart.");
     }
 
-    public void addFirstProductToCart() throws InterruptedException {
+    public void addFirstProductToCart() {
         WebElement card = driver.findElement(firstProductCard);
         WebElement button = card.findElement(By.cssSelector("a[data-product-id]"));
         addProductToCart(card, button, "First product");
     }
 
-    public void addSecondProductToCart() throws InterruptedException {
-        // Wait for first modal to disappear
-        wait.until(ExpectedConditions.invisibilityOfElementLocated(successModal));
-        Thread.sleep(500); // ensure modal is fully gone
-
+    public void addSecondProductToCart() {
+        waitForModalToDisappear(); // Wait for first modal to disappear
         WebElement card = driver.findElement(secondProductCard);
         WebElement button = card.findElement(By.cssSelector("a[data-product-id]"));
         addProductToCart(card, button, "Second product");
@@ -148,9 +153,7 @@ private By quantityInput = By.id("quantity"); // input field in product detail p
     public void clickContinueShopping() {
         WebElement button = driver.findElement(continueShoppingButton);
         ((JavascriptExecutor) driver).executeScript("arguments[0].click();", button);
-
-        // Wait for modal to disappear
-        wait.until(ExpectedConditions.invisibilityOfElementLocated(successModal));
+        waitForModalToDisappear();
         System.out.println("✅ Clicked 'Continue Shopping'");
     }
 
@@ -159,31 +162,28 @@ private By quantityInput = By.id("quantity"); // input field in product detail p
         ((JavascriptExecutor) driver).executeScript("arguments[0].click();", button);
         System.out.println("🛒 Clicked 'View Cart'");
     }
-    
-    // Set quantity for product
-public void setQuantity(int quantity) {
-    WebElement qty = driver.findElement(quantityInput);
-    qty.clear();
-    qty.sendKeys(String.valueOf(quantity));
-    System.out.println("✅ Set product quantity to " + quantity);
-}
 
-// Get quantity from cart (for verification)
-public int getQuantityFromCart() {
-    By quantityLocator = By.xpath("//table[@id='cart_info_table']//tbody/tr/td[4]/button");
-    wait.until(ExpectedConditions.visibilityOfElementLocated(quantityLocator));
-    String qtyText = driver.findElement(quantityLocator).getText().trim();
-    int quantity = Integer.parseInt(qtyText);
-    System.out.println("✅ Product quantity in cart: " + quantity);
-    return quantity;
-}
+    // ====== Quantity Handling ======
+    public void setQuantity(int quantity) {
+        WebElement qty = driver.findElement(quantityInput);
+        qty.clear();
+        qty.sendKeys(String.valueOf(quantity));
+        System.out.println("✅ Set product quantity to " + quantity);
+    }
 
+    public int getQuantityFromCart() {
+        By quantityLocator = By.xpath("//table[@id='cart_info_table']//tbody/tr/td[4]/button");
+        wait.until(ExpectedConditions.visibilityOfElementLocated(quantityLocator));
+        String qtyText = driver.findElement(quantityLocator).getText().trim();
+        int quantity = Integer.parseInt(qtyText);
+        System.out.println("✅ Product quantity in cart: " + quantity);
+        return quantity;
+    }
 
-public void clickAddToCartFromDetail() {
-    WebElement button = driver.findElement(addToCartButtonDetail);
-    ((JavascriptExecutor) driver).executeScript("arguments[0].click();", button);
-    // wait for modal
-    wait.until(ExpectedConditions.visibilityOfElementLocated(successModal));
-    System.out.println("✅ Clicked 'Add to cart' from product detail page");
-}
+    public void clickAddToCartFromDetail() {
+        WebElement button = driver.findElement(addToCartButtonDetail);
+        ((JavascriptExecutor) driver).executeScript("arguments[0].click();", button);
+        wait.until(ExpectedConditions.visibilityOfElementLocated(successModal));
+        System.out.println("✅ Clicked 'Add to cart' from product detail page");
+    }
 }
