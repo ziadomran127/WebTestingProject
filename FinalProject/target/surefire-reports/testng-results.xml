@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-09-20T20:10:57 EEST" name="AutomationExercise Suite" finished-at="2025-09-20T20:11:01 EEST" duration-ms="4294">
+  <suite started-at="2025-09-20T20:29:22 EEST" name="AutomationExercise Suite" finished-at="2025-09-20T20:29:34 EEST" duration-ms="12242">
     <groups>
     </groups>
-    <test started-at="2025-09-20T20:10:57 EEST" name="Register User Tests" finished-at="2025-09-20T20:11:01 EEST" duration-ms="4294">
-      <class name="tests.VerifyAllProductsTest">
-        <test-method is-config="true" signature="globalSetUp()[pri:0, instance:tests.VerifyAllProductsTest@123ef382]" started-at="2025-09-20T20:10:49 EEST" name="globalSetUp" finished-at="2025-09-20T20:10:57 EEST" duration-ms="8360" status="PASS">
+    <test started-at="2025-09-20T20:29:22 EEST" name="Register User Tests" finished-at="2025-09-20T20:29:34 EEST" duration-ms="12242">
+      <class name="tests.VerifyProductQuantityInCartTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.VerifyProductQuantityInCartTest@72f926e6]" started-at="2025-09-20T20:29:22 EEST" name="setUp" finished-at="2025-09-20T20:29:30 EEST" duration-ms="8184" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- globalSetUp -->
-        <test-method signature="testVerifyAllProductsPage()[pri:0, instance:tests.VerifyAllProductsTest@123ef382]" started-at="2025-09-20T20:10:57 EEST" name="testVerifyAllProductsPage" finished-at="2025-09-20T20:11:01 EEST" duration-ms="4273" status="PASS">
+        </test-method> <!-- setUp -->
+        <test-method signature="testProductQuantityInCart()[pri:0, instance:tests.VerifyProductQuantityInCartTest@72f926e6]" started-at="2025-09-20T20:29:30 EEST" name="testProductQuantityInCart" finished-at="2025-09-20T20:29:34 EEST" duration-ms="3358" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testVerifyAllProductsPage -->
-        <test-method is-config="true" signature="globalTearDown()[pri:0, instance:tests.VerifyAllProductsTest@123ef382]" started-at="2025-09-20T20:11:01 EEST" name="globalTearDown" finished-at="2025-09-20T20:11:01 EEST" duration-ms="0" status="PASS">
+        </test-method> <!-- testProductQuantityInCart -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.VerifyProductQuantityInCartTest@72f926e6]" started-at="2025-09-20T20:29:34 EEST" name="tearDown" finished-at="2025-09-20T20:29:34 EEST" duration-ms="673" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- globalTearDown -->
-      </class> <!-- tests.VerifyAllProductsTest -->
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.VerifyProductQuantityInCartTest -->
     </test> <!-- Register User Tests -->
   </suite> <!-- AutomationExercise Suite -->
 </testng-results>

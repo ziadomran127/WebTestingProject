@@ -27,7 +27,8 @@ public class ProductsPage {
     private By searchInput = By.id("search_product");
     private By searchButton = By.id("submit_search");
     private By searchedProductsHeader = By.xpath("//h2[text()='Searched Products']");
-
+// ====== Product Detail Page Verification ======
+private By productDetailInfo = By.cssSelector(".product-information"); // locator for product info section
     // Add to cart
     private By firstProductCard = By.xpath("(//div[@class='product-image-wrapper'])[1]");
     private By secondProductCard = By.xpath("(//div[@class='product-image-wrapper'])[2]");
@@ -35,9 +36,14 @@ public class ProductsPage {
     private By secondAddToCartButton = By.xpath("(//a[@data-product-id])[2]");
     private By continueShoppingButton = By.xpath("//button[text()='Continue Shopping']");
     private By viewCartButton = By.xpath("//u[text()='View Cart']");
+    // ====== Add to cart from Product Detail Page ======
+private By addToCartButtonDetail = By.xpath("/html/body/section/div/div/div[2]/div[2]/div[2]/div/span/button");
 
     // Modal window (appears after adding to cart)
     private By successModal = By.cssSelector(".modal-content");
+    
+    // ====== Quantity Handling (added) ======
+private By quantityInput = By.id("quantity"); // input field in product detail page
 
     public ProductsPage(WebDriver driver) {
         this.driver = driver;
@@ -49,6 +55,12 @@ public class ProductsPage {
     public boolean isAllProductsPageVisible() {
         return driver.findElement(allProductsHeader).isDisplayed();
     }
+    
+    public boolean isProductDetailVisible() {
+    boolean visible = driver.findElement(productDetailInfo).isDisplayed();
+    System.out.println("✅ Product detail page visible: " + visible);
+    return visible;
+}
 
     public boolean isProductsListVisible() {
         return driver.findElements(productsList).size() > 0;
@@ -147,4 +159,31 @@ public class ProductsPage {
         ((JavascriptExecutor) driver).executeScript("arguments[0].click();", button);
         System.out.println("🛒 Clicked 'View Cart'");
     }
+    
+    // Set quantity for product
+public void setQuantity(int quantity) {
+    WebElement qty = driver.findElement(quantityInput);
+    qty.clear();
+    qty.sendKeys(String.valueOf(quantity));
+    System.out.println("✅ Set product quantity to " + quantity);
+}
+
+// Get quantity from cart (for verification)
+public int getQuantityFromCart() {
+    By quantityLocator = By.xpath("//table[@id='cart_info_table']//tbody/tr/td[4]/button");
+    wait.until(ExpectedConditions.visibilityOfElementLocated(quantityLocator));
+    String qtyText = driver.findElement(quantityLocator).getText().trim();
+    int quantity = Integer.parseInt(qtyText);
+    System.out.println("✅ Product quantity in cart: " + quantity);
+    return quantity;
+}
+
+
+public void clickAddToCartFromDetail() {
+    WebElement button = driver.findElement(addToCartButtonDetail);
+    ((JavascriptExecutor) driver).executeScript("arguments[0].click();", button);
+    // wait for modal
+    wait.until(ExpectedConditions.visibilityOfElementLocated(successModal));
+    System.out.println("✅ Clicked 'Add to cart' from product detail page");
+}
 }

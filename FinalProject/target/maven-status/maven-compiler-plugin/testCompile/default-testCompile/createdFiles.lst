@@ -2,7 +2,6 @@ pages\ProductsPage.class
 tests\RegisterExistingUserTest.class
 tests\VerifySubscriptionTest.class
 tests\VerifyTestCasesPageTest.class
-tests\VerifyProductQuantityTest.class
 pages\LoginPage.class
 pages\CartPage.class
 pages\HomePage.class
@@ -15,6 +14,7 @@ pages\SignupPage.class
 tests\VerifyAllProductsTest.class
 tests\LogoutTest.class
 pages\TestCasesPage.class
+tests\VerifyProductQuantityInCartTest.class
 framework\SeleniumFrameWork.class
 tests\InvalidLoginTest.class
 tests\SignupTest.class

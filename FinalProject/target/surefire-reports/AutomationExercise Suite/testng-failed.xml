@@ -3,13 +3,13 @@
 <suite name="Failed suite [AutomationExercise Suite]" guice-stage="DEVELOPMENT" verbose="0">
   <test thread-count="5" name="Register User Tests(failed)" verbose="0">
     <classes>
-      <class name="tests.AddProductsInCartTest">
+      <class name="tests.VerifyProductQuantityInCartTest">
         <methods>
+          <include name="testProductQuantityInCart"/>
           <include name="setUp"/>
           <include name="tearDown"/>
-          <include name="testAddProductsInCart"/>
         </methods>
-      </class> <!-- tests.AddProductsInCartTest -->
+      </class> <!-- tests.VerifyProductQuantityInCartTest -->
     </classes>
   </test> <!-- Register User Tests(failed) -->
 </suite> <!-- Failed suite [AutomationExercise Suite] -->

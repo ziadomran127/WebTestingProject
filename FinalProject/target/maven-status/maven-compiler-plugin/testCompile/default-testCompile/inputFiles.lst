@@ -6,7 +6,6 @@ D:\summer 2025\Software testing diploma\final project\final project\FinalProject
 D:\summer 2025\Software testing diploma\final project\final project\FinalProject\src\test\java\tests\LoginTest.java
 D:\summer 2025\Software testing diploma\final project\final project\FinalProject\src\test\java\tests\VerifySubscriptionInCartPageTest.java
 D:\summer 2025\Software testing diploma\final project\final project\FinalProject\src\test\java\tests\InvalidLoginTest.java
-D:\summer 2025\Software testing diploma\final project\final project\FinalProject\src\test\java\tests\VerifyProductQuantityTest.java
 D:\summer 2025\Software testing diploma\final project\final project\FinalProject\src\test\java\pages\SignupLoginPage.java
 D:\summer 2025\Software testing diploma\final project\final project\FinalProject\src\test\java\tests\AddProductsInCartTest.java
 D:\summer 2025\Software testing diploma\final project\final project\FinalProject\src\test\java\pages\ProductDetailPage.java
@@ -17,6 +16,7 @@ D:\summer 2025\Software testing diploma\final project\final project\FinalProject
 D:\summer 2025\Software testing diploma\final project\final project\FinalProject\src\test\java\tests\VerifyTestCasesPageTest.java
 D:\summer 2025\Software testing diploma\final project\final project\FinalProject\src\test\java\pages\SignupPage.java
 D:\summer 2025\Software testing diploma\final project\final project\FinalProject\src\test\java\tests\LogoutTest.java
+D:\summer 2025\Software testing diploma\final project\final project\FinalProject\src\test\java\tests\VerifyProductQuantityInCartTest.java
 D:\summer 2025\Software testing diploma\final project\final project\FinalProject\src\test\java\tests\BaseTest.java
 D:\summer 2025\Software testing diploma\final project\final project\FinalProject\src\test\java\tests\SearchProductTest.java
 D:\summer 2025\Software testing diploma\final project\final project\FinalProject\src\test\java\tests\VerifySubscriptionTest.java
