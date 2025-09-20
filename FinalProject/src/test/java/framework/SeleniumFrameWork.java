@@ -63,6 +63,15 @@ public class SeleniumFrameWork {
         System.out.println("Edges: Navigated to URL: " + url);
     }
 
+    public void Edges_waitForInvisibility(WebElement element, int timeoutInSeconds) {
+    try {
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(timeoutInSeconds));
+        wait.until(ExpectedConditions.invisibilityOf(element));
+    } catch (Exception e) {
+        System.out.println("Element not invisible within " + timeoutInSeconds + " seconds: " + e.getMessage());
+    }
+}
+
     // Get page title
     public String Edges_getPageTitle() {
         String title = driver.getTitle();

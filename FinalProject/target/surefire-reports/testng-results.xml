@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-09-18T12:56:34 EEST" name="AutomationExercise Suite" finished-at="2025-09-18T12:56:39 EEST" duration-ms="4635">
+  <suite started-at="2025-09-20T20:10:57 EEST" name="AutomationExercise Suite" finished-at="2025-09-20T20:11:01 EEST" duration-ms="4294">
     <groups>
     </groups>
-    <test started-at="2025-09-18T12:56:34 EEST" name="Register User Tests" finished-at="2025-09-18T12:56:39 EEST" duration-ms="4635">
-      <class name="tests.VerifySubscriptionTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.VerifySubscriptionTest@39529185]" started-at="2025-09-18T12:56:34 EEST" name="setUp" finished-at="2025-09-18T12:56:39 EEST" duration-ms="4272" status="PASS">
+    <test started-at="2025-09-20T20:10:57 EEST" name="Register User Tests" finished-at="2025-09-20T20:11:01 EEST" duration-ms="4294">
+      <class name="tests.VerifyAllProductsTest">
+        <test-method is-config="true" signature="globalSetUp()[pri:0, instance:tests.VerifyAllProductsTest@123ef382]" started-at="2025-09-20T20:10:49 EEST" name="globalSetUp" finished-at="2025-09-20T20:10:57 EEST" duration-ms="8360" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="testVerifySubscriptionInHomePage()[pri:0, instance:tests.VerifySubscriptionTest@39529185]" started-at="2025-09-18T12:56:39 EEST" name="testVerifySubscriptionInHomePage" finished-at="2025-09-18T12:56:39 EEST" duration-ms="232" status="PASS">
+        </test-method> <!-- globalSetUp -->
+        <test-method signature="testVerifyAllProductsPage()[pri:0, instance:tests.VerifyAllProductsTest@123ef382]" started-at="2025-09-20T20:10:57 EEST" name="testVerifyAllProductsPage" finished-at="2025-09-20T20:11:01 EEST" duration-ms="4273" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testVerifySubscriptionInHomePage -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.VerifySubscriptionTest@39529185]" started-at="2025-09-18T12:56:39 EEST" name="tearDown" finished-at="2025-09-18T12:56:39 EEST" duration-ms="107" status="PASS">
+        </test-method> <!-- testVerifyAllProductsPage -->
+        <test-method is-config="true" signature="globalTearDown()[pri:0, instance:tests.VerifyAllProductsTest@123ef382]" started-at="2025-09-20T20:11:01 EEST" name="globalTearDown" finished-at="2025-09-20T20:11:01 EEST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- tests.VerifySubscriptionTest -->
+        </test-method> <!-- globalTearDown -->
+      </class> <!-- tests.VerifyAllProductsTest -->
     </test> <!-- Register User Tests -->
   </suite> <!-- AutomationExercise Suite -->
 </testng-results>

@@ -2,9 +2,13 @@ D:\summer 2025\Software testing diploma\final project\final project\FinalProject
 D:\summer 2025\Software testing diploma\final project\final project\FinalProject\src\test\java\pages\ProductsPage.java
 D:\summer 2025\Software testing diploma\final project\final project\FinalProject\src\test\java\tests\SignupTest.java
 D:\summer 2025\Software testing diploma\final project\final project\FinalProject\src\test\java\framework\SeleniumFrameWork.java
+D:\summer 2025\Software testing diploma\final project\final project\FinalProject\src\test\java\pages\CartPage.java
 D:\summer 2025\Software testing diploma\final project\final project\FinalProject\src\test\java\tests\LoginTest.java
+D:\summer 2025\Software testing diploma\final project\final project\FinalProject\src\test\java\tests\VerifySubscriptionInCartPageTest.java
 D:\summer 2025\Software testing diploma\final project\final project\FinalProject\src\test\java\tests\InvalidLoginTest.java
+D:\summer 2025\Software testing diploma\final project\final project\FinalProject\src\test\java\tests\VerifyProductQuantityTest.java
 D:\summer 2025\Software testing diploma\final project\final project\FinalProject\src\test\java\pages\SignupLoginPage.java
+D:\summer 2025\Software testing diploma\final project\final project\FinalProject\src\test\java\tests\AddProductsInCartTest.java
 D:\summer 2025\Software testing diploma\final project\final project\FinalProject\src\test\java\pages\ProductDetailPage.java
 D:\summer 2025\Software testing diploma\final project\final project\FinalProject\src\test\java\tests\ContactUsTest.java
 D:\summer 2025\Software testing diploma\final project\final project\FinalProject\src\test\java\pages\HomePage.java

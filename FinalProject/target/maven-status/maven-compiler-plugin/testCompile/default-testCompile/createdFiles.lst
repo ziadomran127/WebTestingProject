@@ -2,11 +2,15 @@ pages\ProductsPage.class
 tests\RegisterExistingUserTest.class
 tests\VerifySubscriptionTest.class
 tests\VerifyTestCasesPageTest.class
+tests\VerifyProductQuantityTest.class
 pages\LoginPage.class
+pages\CartPage.class
 pages\HomePage.class
+tests\AddProductsInCartTest.class
 tests\BaseTest.class
 tests\LoginTest.class
 pages\ContactUsPage.class
+tests\VerifySubscriptionInCartPageTest.class
 pages\SignupPage.class
 tests\VerifyAllProductsTest.class
 tests\LogoutTest.class
