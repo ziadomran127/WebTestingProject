@@ -2,6 +2,7 @@ tests\RegisterExistingUserTest.class
 tests\TestViewCategoryProducts.class
 tests\VerifySubscriptionTest.class
 tests\VerifyTestCasesPageTest.class
+tests\TestSearchProductsAndCart.class
 pages\LoginPage.class
 pages\CartPage.class
 tests\AddProductsInCartTest.class

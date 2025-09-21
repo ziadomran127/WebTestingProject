@@ -88,27 +88,36 @@ public class ProductsPage {
         return headerVisible && results.size() > 0;
     }
 
-    public boolean areAllSearchedProductsRelevant(String searchKeyword) {
-        List<WebElement> products = driver.findElements(productsList);
-        if (products.isEmpty())
-            return false;
+   public boolean areAllSearchedProductsRelevant(String searchKeyword) {
+    List<WebElement> products = driver.findElements(productsList);
+    boolean allRelevant = true;
+    String lowerKeyword = searchKeyword.toLowerCase().trim();
 
-        String lowerKeyword = searchKeyword.toLowerCase();
-        for (WebElement product : products) {
-            try {
-                WebElement nameElement = product.findElement(By.cssSelector(".productinfo p"));
-                String productName = nameElement.getText().toLowerCase();
-                if (!productName.contains(lowerKeyword)) {
-                    System.out.println("⚠️ Found unrelated product: " + productName);
-                    return false;
-                }
-            } catch (Exception e) {
-                System.out.println("⚠️ Couldn't read product name for one product");
-                return false;
+    for (WebElement product : products) {
+        String productName = "";
+        try {
+            // Try getting product name from <p> first
+            productName = product.findElement(By.cssSelector(".productinfo p")).getText().toLowerCase().trim();
+            
+            // If empty, try <h2>
+            if (productName.isEmpty()) {
+                productName = product.findElement(By.cssSelector(".productinfo h2")).getText().toLowerCase().trim();
             }
+
+            if (!productName.contains(lowerKeyword)) {
+                System.out.println("⚠️ Unrelated product found: " + productName);
+                allRelevant = false;
+            }
+        } catch (Exception e) {
+            System.out.println("⚠️ Could not read product name for one product");
+            allRelevant = false;
         }
-        return true;
     }
+    return allRelevant;
+}
+
+
+
 
     // ====== Add to cart helpers ======
     private void waitForModalToDisappear() {
