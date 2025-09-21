@@ -3,7 +3,7 @@
     <test name="Register User Tests">
         <classes>
            
-         <class name="tests.TestSearchProductsAndCart"/>
+         <class name="tests.TestAddRecommendedItemsToCart"/>
         </classes>
     </test>
 </suite>

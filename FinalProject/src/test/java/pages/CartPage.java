@@ -7,6 +7,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
+import java.util.List;
 import org.openqa.selenium.WebElement;
 
 public class CartPage {
@@ -27,7 +28,7 @@ public class CartPage {
     // Assuming the first product's remove 'X' button has this locator
     private By firstProductRemoveButton = By.xpath("/html/body/section/div/div[2]/table/tbody/tr[1]/td[6]/a");
     private By firstProductRow = By.xpath("//tr[1]");
-    
+     private By cartFirstProductName = By.xpath("//table[@id='cart_info_table']//td[@class='cart_description']/h4/a");
     public CartPage(WebDriver driver) {
         this.driver = driver;
         this.wait = new WebDriverWait(driver, Duration.ofSeconds(10));
@@ -119,5 +120,18 @@ public void clickPlaceOrder() {
         return false;
     }
 }
+    public String getFirstProductNameInCart() {
+        return driver.findElement(cartFirstProductName).getText().trim();
+    }
+  public boolean isProductInCart(String expectedName) {
+    List<WebElement> products = driver.findElements(By.xpath("//table[@id='cart_info_table']//td[@class='cart_description']/h4/a"));
+    for (WebElement product : products) {
+        if (product.getText().trim().contains(expectedName)) {
+            return true;
+        }
+    }
+    return false;
+}
+
 
 }

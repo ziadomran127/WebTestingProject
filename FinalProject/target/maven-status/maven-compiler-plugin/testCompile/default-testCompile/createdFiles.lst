@@ -10,10 +10,12 @@ tests\BaseTest.class
 tests\VerifyAllProductsTest.class
 pages\PaymentPage.class
 pages\TestCasesPage.class
+tests\TestAddRecommendedItemsToCart.class
 pages\CategoryPage.class
 tests\TestViewBrandProducts.class
 tests\ContactUsTest.class
 tests\SearchProductTest.class
+tests\TestAddReviewOnProduct.class
 pages\BrandsPage.class
 tests\TestPlaceOrderLoginBeforeCheckout.class
 pages\ProductsPage.class

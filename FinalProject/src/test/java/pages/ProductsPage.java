@@ -43,6 +43,13 @@ public class ProductsPage {
 
     // Quantity Handling
     private By quantityInput = By.id("quantity");
+    
+    // Review section locators
+private By reviewNameInput = By.id("name");
+private By reviewEmailInput = By.id("email");
+private By reviewTextArea = By.id("review");
+private By submitReviewButton = By.id("button-review");
+private By reviewSuccessMessage = By.cssSelector(".alert-success");
 
     public ProductsPage(WebDriver driver) {
         this.driver = driver;
@@ -195,4 +202,20 @@ public class ProductsPage {
         wait.until(ExpectedConditions.visibilityOfElementLocated(successModal));
         System.out.println("✅ Clicked 'Add to cart' from product detail page");
     }
+    
+    public void enterReview(String name, String email, String review) {
+    driver.findElement(reviewNameInput).sendKeys(name);
+    driver.findElement(reviewEmailInput).sendKeys(email);
+    driver.findElement(reviewTextArea).sendKeys(review);
+    System.out.println("✅ Filled review form");
+}
+
+public void submitReview() {
+    driver.findElement(submitReviewButton).click();
+    System.out.println("✅ Clicked 'Submit Review'");
+}
+
+public boolean isReviewSubmittedMessageVisible() {
+    return driver.findElement(reviewSuccessMessage).isDisplayed();
+}
 }

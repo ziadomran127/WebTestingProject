@@ -3,13 +3,13 @@
 <suite name="Failed suite [AutomationExercise Suite]" guice-stage="DEVELOPMENT" verbose="0">
   <test thread-count="5" name="Register User Tests(failed)" verbose="0">
     <classes>
-      <class name="tests.TestSearchProductsAndCart">
+      <class name="tests.TestAddRecommendedItemsToCart">
         <methods>
-          <include name="testSearchAndAddToCart"/>
-          <include name="tearDown"/>
+          <include name="testAddRecommendedItemToCart"/>
           <include name="setUp"/>
+          <include name="tearDown"/>
         </methods>
-      </class> <!-- tests.TestSearchProductsAndCart -->
+      </class> <!-- tests.TestAddRecommendedItemsToCart -->
     </classes>
   </test> <!-- Register User Tests(failed) -->
 </suite> <!-- Failed suite [AutomationExercise Suite] -->
