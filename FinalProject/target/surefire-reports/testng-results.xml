@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-09-20T22:02:35 EEST" name="AutomationExercise Suite" finished-at="2025-09-20T22:03:02 EEST" duration-ms="27536">
+  <suite started-at="2025-09-21T14:18:18 EEST" name="AutomationExercise Suite" finished-at="2025-09-21T14:18:32 EEST" duration-ms="13927">
     <groups>
     </groups>
-    <test started-at="2025-09-20T22:02:35 EEST" name="Register User Tests" finished-at="2025-09-20T22:03:02 EEST" duration-ms="27536">
-      <class name="tests.PlaceOrderRegisterWhileCheckoutTest">
-        <test-method is-config="true" signature="globalSetUp()[pri:0, instance:tests.PlaceOrderRegisterWhileCheckoutTest@dbf57b3]" started-at="2025-09-20T22:02:26 EEST" name="globalSetUp" finished-at="2025-09-20T22:02:35 EEST" duration-ms="8615" status="PASS">
+    <test started-at="2025-09-21T14:18:18 EEST" name="Register User Tests" finished-at="2025-09-21T14:18:32 EEST" duration-ms="13927">
+      <class name="tests.TestViewBrandProducts">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.TestViewBrandProducts@498d318c]" started-at="2025-09-21T14:18:18 EEST" name="setUp" finished-at="2025-09-21T14:18:23 EEST" duration-ms="4527" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- globalSetUp -->
-        <test-method signature="testPlaceOrderRegisterWhileCheckout()[pri:0, instance:tests.PlaceOrderRegisterWhileCheckoutTest@dbf57b3]" started-at="2025-09-20T22:02:35 EEST" name="testPlaceOrderRegisterWhileCheckout" finished-at="2025-09-20T22:03:02 EEST" duration-ms="27515" status="PASS">
+        </test-method> <!-- setUp -->
+        <test-method signature="testViewBrandProducts()[pri:0, instance:tests.TestViewBrandProducts@498d318c]" started-at="2025-09-21T14:18:23 EEST" name="testViewBrandProducts" finished-at="2025-09-21T14:18:31 EEST" duration-ms="8688" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testPlaceOrderRegisterWhileCheckout -->
-        <test-method is-config="true" signature="globalTearDown()[pri:0, instance:tests.PlaceOrderRegisterWhileCheckoutTest@dbf57b3]" started-at="2025-09-20T22:03:02 EEST" name="globalTearDown" finished-at="2025-09-20T22:03:02 EEST" duration-ms="0" status="PASS">
+        </test-method> <!-- testViewBrandProducts -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.TestViewBrandProducts@498d318c]" started-at="2025-09-21T14:18:31 EEST" name="tearDown" finished-at="2025-09-21T14:18:32 EEST" duration-ms="687" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- globalTearDown -->
-      </class> <!-- tests.PlaceOrderRegisterWhileCheckoutTest -->
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.TestViewBrandProducts -->
     </test> <!-- Register User Tests -->
   </suite> <!-- AutomationExercise Suite -->
 </testng-results>

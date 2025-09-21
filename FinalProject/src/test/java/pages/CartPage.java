@@ -23,6 +23,11 @@ public class CartPage {
     private By commentTextArea = By.name("message"); // usually the comment box has name="message"
     private By placeOrderButton = By.xpath("//a[text()='Place Order']"); // adjust if button text is different
     
+    // ====== Remove product locators ======
+    // Assuming the first product's remove 'X' button has this locator
+    private By firstProductRemoveButton = By.xpath("/html/body/section/div/div[2]/table/tbody/tr[1]/td[6]/a");
+    private By firstProductRow = By.xpath("//tr[1]");
+    
     public CartPage(WebDriver driver) {
         this.driver = driver;
         this.wait = new WebDriverWait(driver, Duration.ofSeconds(10));
@@ -93,4 +98,26 @@ public void clickPlaceOrder() {
     driver.findElement(placeOrderButton).click();
     System.out.println("✅ Clicked 'Place Order' button");
 }
+
+
+ // Remove first product from cart
+    public void removeFirstProductFromCart() {
+        wait.until(ExpectedConditions.elementToBeClickable(firstProductRemoveButton));
+        WebElement btn = driver.findElement(firstProductRemoveButton);
+        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true); arguments[0].click();", btn);
+        System.out.println("🗑️ Clicked 'X' to remove first product from cart");
+    }
+
+    public boolean isFirstProductInCartVisible() {
+    try {
+        // Wait a few seconds to allow product removal
+        WebDriverWait shortWait = new WebDriverWait(driver, Duration.ofSeconds(5));
+        shortWait.until(ExpectedConditions.invisibilityOfElementLocated(firstProductRemoveButton));
+        return driver.findElement(firstProductRemoveButton).isDisplayed();
+    } catch (Exception e) {
+        // Element not found or invisible -> product removed
+        return false;
+    }
+}
+
 }

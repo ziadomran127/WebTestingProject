@@ -3,7 +3,7 @@
     <test name="Register User Tests">
         <classes>
            
-         <class name="tests.PlaceOrderRegisterWhileCheckoutTest"/>
+         <class name="tests.TestViewBrandProducts"/>
         </classes>
     </test>
 </suite>
