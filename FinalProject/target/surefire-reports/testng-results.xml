@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-09-22T13:13:03 EEST" name="AutomationExercise Suite" finished-at="2025-09-22T13:13:29 EEST" duration-ms="25908">
+  <suite started-at="2025-09-22T13:23:12 EEST" name="AutomationExercise Suite" finished-at="2025-09-22T13:23:44 EEST" duration-ms="32315">
     <groups>
     </groups>
-    <test started-at="2025-09-22T13:13:03 EEST" name="Register User Tests" finished-at="2025-09-22T13:13:29 EEST" duration-ms="25908">
-      <class name="tests.TestCase23">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.TestCase23@498d318c]" started-at="2025-09-22T13:13:03 EEST" name="setUp" finished-at="2025-09-22T13:13:04 EEST" duration-ms="1026" status="PASS">
+    <test started-at="2025-09-22T13:23:12 EEST" name="Register User Tests" finished-at="2025-09-22T13:23:44 EEST" duration-ms="32315">
+      <class name="tests.TestCase24">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.TestCase24@498d318c]" started-at="2025-09-22T13:23:12 EEST" name="setUp" finished-at="2025-09-22T13:23:13 EEST" duration-ms="1024" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifyAddressDetailsInCheckout()[pri:0, instance:tests.TestCase23@498d318c]" started-at="2025-09-22T13:13:04 EEST" name="verifyAddressDetailsInCheckout" finished-at="2025-09-22T13:13:28 EEST" duration-ms="23589" status="PASS">
+        <test-method signature="downloadInvoiceAfterPurchase()[pri:0, instance:tests.TestCase24@498d318c]" started-at="2025-09-22T13:23:13 EEST" name="downloadInvoiceAfterPurchase" finished-at="2025-09-22T13:23:43 EEST" duration-ms="30019" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyAddressDetailsInCheckout -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.TestCase23@498d318c]" started-at="2025-09-22T13:13:28 EEST" name="tearDown" finished-at="2025-09-22T13:13:29 EEST" duration-ms="1267" status="PASS">
+        </test-method> <!-- downloadInvoiceAfterPurchase -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.TestCase24@498d318c]" started-at="2025-09-22T13:23:43 EEST" name="tearDown" finished-at="2025-09-22T13:23:44 EEST" duration-ms="1246" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- tests.TestCase23 -->
+      </class> <!-- tests.TestCase24 -->
     </test> <!-- Register User Tests -->
   </suite> <!-- AutomationExercise Suite -->
 </testng-results>

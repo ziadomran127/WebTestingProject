@@ -7,6 +7,7 @@ pages\LoginPage.class
 pages\CartPage.class
 tests\AddProductsInCartTest.class
 tests\BaseTest.class
+tests\TestCase24.class
 tests\VerifyAllProductsTest.class
 pages\PaymentPage.class
 pages\TestCasesPage.class

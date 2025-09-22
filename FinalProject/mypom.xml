@@ -3,7 +3,7 @@
     <test name="Register User Tests">
         <classes>
            
-         <class name="tests.TestCase23"/>
+         <class name="tests.TestCase24"/>
         </classes>
     </test>
 </suite>

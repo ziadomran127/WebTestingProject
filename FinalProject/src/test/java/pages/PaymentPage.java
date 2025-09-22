@@ -20,6 +20,9 @@ public class PaymentPage {
     private By expiryYearInput = By.name("expiry_year");
     private By payAndConfirmButton = By.id("submit"); // Adjust if needed
      private By orderPlacedMsg = By.xpath("//p[text()='Congratulations! Your order has been confirmed!']");
+     // Invoice locators
+    private By downloadInvoiceButton = By.xpath("//a[text()='Download Invoice']");
+    private By continueButton = By.xpath("//a[@data-qa='continue-button']");
 
     // ───── Constructor ─────
     public PaymentPage(WebDriver driver) {
@@ -56,5 +59,21 @@ public class PaymentPage {
         boolean visible = driver.findElement(orderPlacedMsg).isDisplayed();
         System.out.println("🎉 Order placed successfully: " + visible);
         return visible;
+    }
+    
+     public void clickDownloadInvoice() {
+        wait.until(ExpectedConditions.elementToBeClickable(downloadInvoiceButton));
+        driver.findElement(downloadInvoiceButton).click();
+        System.out.println("📥 Clicked 'Download Invoice'");
+    }
+     
+      public boolean isInvoiceButtonVisible() {
+        return driver.findElement(downloadInvoiceButton).isDisplayed();
+    }
+      
+       public void clickContinueAfterInvoice() {
+        wait.until(ExpectedConditions.elementToBeClickable(continueButton));
+        driver.findElement(continueButton).click();
+        System.out.println("➡️ Clicked 'Continue' after downloading invoice");
     }
 }
